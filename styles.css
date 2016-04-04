@@ -1,21 +1,21 @@
 /* Global Layout Set-up */
-* { 
+* {
   box-sizing: border-box;
 }
-  
+
 body {
   margin: 0;
   padding: 0;
   text-align: center;
   font-family: 'Roboto', sans-serif;
   color: #222;
-  background: #f7f5f0;
+  background: #efefef;
 }
 /* Link Styles */
 
 a {
   text-decoration: none;
-  color: #999;
+  color: #eee;
 }
 a:hover {
   color: #6633ff;
@@ -25,11 +25,12 @@ a:hover {
 
 .main-nav {
   width: 100%;
-  background: black;
+  background: #7790A9;
   min-height: 30px;
   padding: 10px;
   position: fixed;
   text-align: center;
+  border-bottom: 5px solid #DCA485;
 }
 .nav {
   display: flex;
@@ -45,20 +46,20 @@ a:hover {
     margin-right: auto;
     color: white;
 }
-.nav li {
-  padding: 5px 10px 10px 10px;
-}
+
 .nav a {
+  padding: 10px 15px;
   transition: all .5s;
 }
+
 .nav a:hover {
+  background-color: #DCA485;
   color: white
 }
 
 header {
   text-align: center;
-  background: url('images/portland.jpg') no-repeat top center ;
-  background-size: cover;
+  background: url('images/sayagata.png');
   overflow: hidden;
   padding-top: 60px;
 }
@@ -66,32 +67,30 @@ header {
   line-height: 1.5;
 }
 header .profile-image {
-  margin-top: 50px;
   width: 150px;
   height: 150px;
+  margin-top: 20px;
   border-radius: 50%;
   border: 3px solid white;
-  transition: all .5s;
+  transition: all .7s;
 }
-header .profile-image:hover {
-  transform: scale(1.2) rotate(5deg);
-}
+
 .tag {
-  background-color: #efefef;
-  color: black;
   padding: 10px;
   border-radius: 5px;
   display: table;
-  margin: 10px auto;
-} 
-.location {
-  background-color: #222;
-  color: yellow;
+  margin: 15px auto;
 }
+.location {
+  background-color: #2A333C;
+  color: #FDFEFF;
+  /*border: 2px solid #FDFEFF;*/
+}
+
+/*----- Card Styles -----*/
+
 .card {
   margin: 30px;
-  padding: 20px 40px 40px;
-  max-width: 500px;
   text-align: left;
   background: #fff;
   border-bottom: 4px solid #ccc;
@@ -99,7 +98,21 @@ header .profile-image:hover {
   transition: all .5s;
 }
 .card:hover {
-  border-color: #ff99ff;
+  border-color: #DCA485;
+}
+
+.card h2 {
+  background-image: url('images/lodyas.png');
+  color: #efefef;
+  margin: 0;
+  padding: 7px;
+  padding-left: 20px;
+  border-bottom: 4px solid #3F3F3F;
+  border-radius: 6px 6px 0 0;
+}
+
+.card p {
+  padding: 10px;
 }
 
 ul.skills {
@@ -167,12 +180,75 @@ a.social:hover {
   clear: both;
 }
 
+
+
+/* My Custom Styles
+   ======================================================= */
+
+  /*----- Header & About Me Info -----*/
+ .tag {
+   background-color: #6C7A89;
+   color: #FDFEFF;
+   margin-bottom: 7.5%;
+   border-bottom: 2px solid #444D56;
+ }
+
+ .col2 ul {
+   list-style: none;
+   padding: 0;
+   margin: 0;
+ }
+
+ .col2 li {
+   font-family: 'Nunito', sans-serif;
+   color: #FDFEFF;
+   display: inline-block;
+   width: 35%;
+   text-align: left;
+   margin: 0 auto 15px;
+   padding: .3125em .3125em .3125em 3em;
+   border-radius: 6px;
+   background-position: 5% 50%;
+   background-size: 24px 24px;
+   background-repeat: no-repeat;
+ }
+
+ .col2 li.code {
+   background-color: #9B59B6;
+   background-image: url('images/icons/ic_code_white_48px.svg');
+ }
+
+ .col2 li.myhome {
+   background-color: #59ABE3;
+   background-image: url('images/icons/ic_home_white_48px.svg');
+ }
+
+ .col2 li.exercise {
+   background-color: #26A65B;
+   background-image: url('images/icons/ic_fitness_center_white_48px.svg');
+ }
+
+ .col2 li.video-game {
+   background-color: #D64541;
+   background-image: url('images/icons/ic_laptop_windows_white_48px.svg');
+ }
+
+ .col2 li:nth-child(odd) {
+   margin-right: 20px;
+ }
+
+ .col2 li:last-of-type {
+   margin-bottom: 0;
+ }
+
+
+
 /* Styles for larger screens */
 @media screen and (min-width: 720px) {
-  
+
   .flex {
       display: -ms-flexbox;      /* TWEENER - IE 10 */
-      display: flex; 
+      display: flex;
       max-width: 1200px;
       -ms-flex-pack: distribute;
       justify-content: space-around;
@@ -181,6 +257,10 @@ a.social:hover {
 
   header {
     min-height: 470px;
+  }
+
+  header .profile-image:hover {
+    transform: scale(1.2) rotate(360deg);
   }
 
   .nav {
@@ -203,5 +283,50 @@ a.social:hover {
     margin: 40px auto;
   }
 
+  .card {
+    max-width: 500px;
+  }
+
+  .tag {
+    margin-bottom: 5%;
+  }
 }
 
+
+@media screen and (min-width: 1400px) {
+
+  .info-box {
+    max-width: 40%;
+    background: #6C7A89;
+    display: inline-block;
+    padding: 1%;
+    margin: 10px 0 0 0;
+    border-bottom: 3px solid #444D56;
+    border-radius: 6px;
+  }
+
+  .col1, .col2 {
+    margin-top: 20px;
+  }
+
+  .info-box .col1 {
+    float: left;
+    width: 40%;
+    margin-right: 10%;
+  }
+
+  .info-box .col2 {
+    float: right;
+    width: 50%;
+    color: #FDFEFF;
+  }
+
+  .col2 li {
+    width: 100%;
+    margin-bottom: 2.2em;
+    padding-left: 3.4375em;
+  }
+
+  .col2 li:nth-child(odd) {
+    margin-right: 0;
+  }
