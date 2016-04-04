@@ -59,9 +59,8 @@ a:hover {
 
 header {
   text-align: center;
-  background: url('images/sayagata.png');
-  overflow: hidden;
-  padding-top: 60px;
+  background: url('images/office.png');
+  padding: 70px 0 30px;
 }
 header {
   line-height: 1.5;
@@ -186,11 +185,11 @@ a.social:hover {
    ======================================================= */
 
   /*----- Header & About Me Info -----*/
+
  .tag {
-   background-color: #6C7A89;
    color: #FDFEFF;
    margin-bottom: 7.5%;
-   border-bottom: 2px solid #444D56;
+   border-bottom: 2px solid #efefef;
  }
 
  .col2 ul {
@@ -199,14 +198,23 @@ a.social:hover {
    margin: 0;
  }
 
+ .info-box {
+   width: 90%;
+   background-color: rgba(42, 48, 54, 0.8);
+   display: inline-block;
+   padding: 1%;
+   border-bottom: 3px solid rgba(68, 77, 86, 0.8);
+   border-radius: 6px;
+ }
+
  .col2 li {
    font-family: 'Nunito', sans-serif;
    color: #FDFEFF;
    display: inline-block;
-   width: 35%;
-   text-align: left;
-   margin: 0 auto 15px;
-   padding: .3125em .3125em .3125em 3em;
+   width: 85%;
+   text-align: center;
+   margin: 0 auto 35px;
+   padding: 5px;
    border-radius: 6px;
    background-position: 5% 50%;
    background-size: 24px 24px;
@@ -233,14 +241,6 @@ a.social:hover {
    background-image: url('images/icons/ic_laptop_windows_white_48px.svg');
  }
 
- .col2 li:nth-child(odd) {
-   margin-right: 20px;
- }
-
- .col2 li:last-of-type {
-   margin-bottom: 0;
- }
-
 
 
 /* Styles for larger screens */
@@ -255,12 +255,33 @@ a.social:hover {
       margin: 0 auto;
   }
 
-  header {
-    min-height: 470px;
-  }
-
   header .profile-image:hover {
     transform: scale(1.2) rotate(360deg);
+  }
+
+  .col1, .col2 {
+    margin-top: 20px;
+  }
+
+  .info-box .col1 {
+    float: left;
+    width: 40%;
+    margin-right: 10%;
+  }
+
+  .info-box .col2 {
+    float: right;
+    width: 50%;
+    color: #FDFEFF;
+  }
+
+  .col2 li {
+    text-align: left;
+    padding: 5px 5px 5px 55px;
+  }
+
+  .col2 li:last-child {
+    margin-bottom: 0;
   }
 
   .nav {
@@ -293,40 +314,33 @@ a.social:hover {
 }
 
 
-@media screen and (min-width: 1400px) {
+@media screen and (min-width: 1100px) {
+
+  .tag {
+     background-color: rgba(42, 48, 54, 0.7);
+  }
 
   .info-box {
-    max-width: 40%;
-    background: #6C7A89;
-    display: inline-block;
-    padding: 1%;
-    margin: 10px 0 0 0;
-    border-bottom: 3px solid #444D56;
-    border-radius: 6px;
+    background: none;
+    border-bottom: none;
+    max-width: 1300px;
   }
 
-  .col1, .col2 {
-    margin-top: 20px;
-  }
-
-  .info-box .col1 {
-    float: left;
-    width: 40%;
-    margin-right: 10%;
-  }
-
-  .info-box .col2 {
-    float: right;
-    width: 50%;
-    color: #FDFEFF;
+  .info-box .col1, .info-box .col2 {
+    float: none;
+    margin: 0;
+    width: 100%;
   }
 
   .col2 li {
-    width: 100%;
-    margin-bottom: 2.2em;
-    padding-left: 3.4375em;
+    width: 35%;
   }
 
   .col2 li:nth-child(odd) {
-    margin-right: 0;
+    margin-right: 20px;
   }
+
+  .col2 li:last-of-type {
+    margin-bottom: 0;
+  }
+}
