@@ -21,6 +21,10 @@ a:hover {
   color: #6633ff;
 }
 
+.selected {
+  background-color: #DCA485;
+}
+
 /* Section Styles */
 
 .main-nav {
@@ -100,18 +104,41 @@ header .profile-image {
   border-color: #DCA485;
 }
 
-.card h2 {
-  background-image: url('images/lodyas.png');
+.card h2, .music-card h2 {
+  background-image: url('images/office.png');
   color: #efefef;
   margin: 0;
   padding: 7px;
   padding-left: 25px;
-  border-bottom: 4px solid #3F3F3F;
+  /*border-bottom: 4px solid #3F3F3F;*/
   border-radius: 6px 6px 0 0;
 }
 
 .card p {
-  padding: 10px 25px;
+  padding: 5px 25px;
+}
+
+.music-card {
+  width: 45%;
+  margin: 2.5%;
+  float: left;
+  background: #fff;
+  border-bottom: 4px solid #ccc;
+  border-radius: 0 0 6px 6px;
+}
+
+.music-card:nth-of-type(3n) {
+  clear: both;
+}
+
+.music-card h2 {
+  font-weight: 300;
+  font-size: 1.25em;
+  padding: 7px;
+}
+
+.music-card p {
+  padding: 15px;
 }
 
 ul.skills {
@@ -127,12 +154,13 @@ ul.skills {
   margin: 2px;
 }
 
-.skill-icon {
+
+.skills img {
   width: 48px;
   height: 48px;
 }
 
-.skill-icon:hover {
+.skills img:hover {
   transition: all .6s;
   transform: rotate(360deg);
 }
@@ -262,6 +290,25 @@ a.social:hover {
  }
 
 
+
+ /* Music Page
+    ======================================================= */
+
+    .music-tag {
+      font-weight: 300;
+      font-size: 1.75em;
+      color: #efefef;
+    }
+
+    .song-info {
+      list-style: none;
+      padding: 0;
+    }
+
+    .song-info li {
+      display: inline-block;
+      margin: 0 30px;
+    }
 
 /* Styles for larger screens */
 @media screen and (min-width: 720px) {
