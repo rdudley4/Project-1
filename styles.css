@@ -299,6 +299,10 @@ a.social:hover {
       margin: 0 30px;
     }
 
+    .song-info img {
+      width: 32px;
+    }
+
     .music-card {
       width: 100%;
       float: left;
