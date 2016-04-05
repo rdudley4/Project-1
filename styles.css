@@ -283,7 +283,7 @@ a.social:hover {
  /* Music Page
     ======================================================= */
 
-    iframe.big, iframe.small {
+    iframe {
       width: 100%;
       border: none;
       background: transparent;
