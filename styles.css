@@ -122,7 +122,6 @@ header .profile-image {
   margin: 0;
   padding: 7px;
   padding-left: 25px;
-  /*border-bottom: 4px solid #3F3F3F;*/
   border-radius: 6px 6px 0 0;
 }
 
@@ -285,64 +284,64 @@ a.social:hover {
  /* Music Page
     ======================================================= */
 
-    iframe {
-      width: 100%;
-      border: none;
-      background: transparent;
-      overflow: hidden;
-    }
+  iframe {
+    width: 100%;
+    border: none;
+    background: transparent;
+    overflow: hidden;
+  }
 
-    iframe.big {
-      height: 450px;
-    }
+  iframe.big {
+    height: 450px;
+  }
 
-    iframe.small {
-      height: 166px;
-    }
+  iframe.small {
+    height: 166px;
+  }
 
-    .music-tag {
-      font-weight: 300;
-      font-size: 1.325em;
-      color: #efefef;
-    }
+  .music-tag {
+    font-weight: 300;
+    font-size: 1.325em;
+    color: #efefef;
+  }
 
-    .song-info {
-      list-style: none;
-      margin: 5px 0;
-      padding: 0;
-    }
+  .song-info {
+    list-style: none;
+    margin: 5px 0;
+    padding: 0;
+  }
 
-    .song-info li {
-      display: inline-block;
-      margin: 0 20px;
-    }
+  .song-info li {
+    display: inline-block;
+    margin: 0 20px;
+  }
 
-    .song-info img {
-      width: 32px;
-    }
+  .song-info img {
+    width: 32px;
+  }
 
-    .music-card {
-      width: 100%;
-      float: left;
-      background: #fff;
-      margin-bottom: 50px;
-      border-bottom: 4px solid #ccc;
-      border-radius: 0 0 6px 6px;
-    }
+  .music-card {
+    width: 100%;
+    float: left;
+    background: #fff;
+    margin-bottom: 50px;
+    border-bottom: 4px solid #ccc;
+    border-radius: 0 0 6px 6px;
+  }
 
-    .music-card h2 {
-      font-weight: 300;
-      font-size: 1.25em;
-      padding: 7px;
-    }
+  .music-card h2 {
+    font-weight: 300;
+    font-size: 1.25em;
+    padding: 7px;
+  }
 
-    .music-card p {
-      padding: 15px;
-    }
+  .music-card p {
+    padding: 15px;
+  }
 
-    img[alt="Facebook Icon"] {
-      border-radius: 50%;
-    }
+  img[alt="Facebook Icon"] {
+    border-radius: 50%;
+  }
 
 /* Styles for larger screens */
 @media screen and (min-width: 720px) {
