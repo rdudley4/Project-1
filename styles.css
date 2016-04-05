@@ -322,6 +322,10 @@ a.social:hover {
       padding: 15px;
     }
 
+    img[alt="Facebook Icon"] {
+      border-radius: 50%;
+    }
+
 /* Styles for larger screens */
 @media screen and (min-width: 720px) {
 
