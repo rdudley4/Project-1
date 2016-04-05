@@ -90,6 +90,18 @@ header .profile-image {
   /*border: 2px solid #FDFEFF;*/
 }
 
+.wrapper {
+  overflow: hidden;
+  margin: 0 auto;
+  padding: 0 5% 5% 5%;
+}
+
+.wrapper h1 {
+  font-weight: 300;
+  font-size: 1.25em;
+  margin-top: 30px;
+}
+
 /*----- Card Styles -----*/
 
 .card {
@@ -116,29 +128,6 @@ header .profile-image {
 
 .card p {
   padding: 5px 25px;
-}
-
-.music-card {
-  width: 45%;
-  margin: 2.5%;
-  float: left;
-  background: #fff;
-  border-bottom: 4px solid #ccc;
-  border-radius: 0 0 6px 6px;
-}
-
-.music-card:nth-of-type(3n) {
-  clear: both;
-}
-
-.music-card h2 {
-  font-weight: 300;
-  font-size: 1.25em;
-  padding: 7px;
-}
-
-.music-card p {
-  padding: 15px;
 }
 
 ul.skills {
@@ -217,7 +206,7 @@ a.twitter {
   background-image: url(images/twitter.svg);
 }
 a.linkedin {
-  background-image: url(images/linkedin.svg);
+  background-image: url(images/Kappa.png);
 }
 a.github {
   background-image: url(images/github.svg);
@@ -310,6 +299,25 @@ a.social:hover {
       margin: 0 30px;
     }
 
+    .music-card {
+      width: 100%;
+      float: left;
+      background: #fff;
+      margin-bottom: 50px;
+      border-bottom: 4px solid #ccc;
+      border-radius: 0 0 6px 6px;
+    }
+
+    .music-card h2 {
+      font-weight: 300;
+      font-size: 1.25em;
+      padding: 7px;
+    }
+
+    .music-card p {
+      padding: 15px;
+    }
+
 /* Styles for larger screens */
 @media screen and (min-width: 720px) {
 
@@ -399,5 +407,10 @@ a.social:hover {
 
   .col2 li:last-of-type {
     margin-bottom: 0;
+  }
+
+  .music-card {
+    width: 45%;
+    margin: 2.5%;
   }
 }
