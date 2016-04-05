@@ -96,7 +96,7 @@ header .profile-image {
   padding: 0 5% 5% 5%;
 }
 
-.wrapper h1 {
+.wrapper h2 {
   font-weight: 300;
   font-size: 0.8em;
   margin: 30px 0;
@@ -283,6 +283,21 @@ a.social:hover {
  /* Music Page
     ======================================================= */
 
+    iframe.big, iframe.small {
+      width: 100%;
+      border: none;
+      background: transparent;
+      overflow: hidden;
+    }
+
+    iframe.big {
+      height: 450px;
+    }
+
+    iframe.small {
+      height: 166px;
+    }
+
     .music-tag {
       font-weight: 300;
       font-size: 1.75em;
@@ -389,7 +404,7 @@ a.social:hover {
     margin-bottom: 5%;
   }
 
-  .wrapper h1 {
+  .wrapper h2 {
     font-size: 1.125em;
   }
 }
