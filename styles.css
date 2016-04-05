@@ -218,8 +218,6 @@ a.social:hover {
   clear: both;
 }
 
-
-
 /* My Custom Styles
    ======================================================= */
 
@@ -229,6 +227,10 @@ a.social:hover {
    color: #FDFEFF;
    margin-bottom: 7.5%;
    border-bottom: 2px solid #efefef;
+ }
+
+ .music-logo {
+   width: 125px;
  }
 
  .col2 ul {
@@ -300,7 +302,7 @@ a.social:hover {
 
     .music-tag {
       font-weight: 300;
-      font-size: 1.75em;
+      font-size: 1.325em;
       color: #efefef;
     }
 
@@ -351,6 +353,14 @@ a.social:hover {
       -ms-flex-pack: distribute;
       justify-content: space-around;
       margin: 0 auto;
+  }
+
+  .music-logo {
+    width: 250px;
+  }
+
+  .music-tag {
+    font-size: 1.75em;
   }
 
   header .profile-image:hover {
@@ -437,7 +447,7 @@ a.social:hover {
   }
 
   .music-card {
-    width: 45%;
-    margin: 2.5%;
+    width: 47%;
+    margin: 1.5%;
   }
 }
