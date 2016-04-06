@@ -87,7 +87,6 @@ header .profile-image {
 .location {
   background-color: #2A333C;
   color: #FDFEFF;
-  /*border: 2px solid #FDFEFF;*/
 }
 
 .wrapper {
@@ -289,13 +288,6 @@ a.social:hover {
     border: none;
     background: transparent;
     overflow: hidden;
-  }
-
-  iframe.big {
-    height: 450px;
-  }
-
-  iframe.small {
     height: 166px;
   }
 
@@ -393,7 +385,6 @@ a.social:hover {
     padding: 0 30px;
   }
 
-
   main {
     padding-top: 20px;
   }
@@ -449,5 +440,9 @@ a.social:hover {
   .music-card {
     width: 47%;
     margin: 1.5%;
+  }
+
+  iframe.featured {
+    height: 450px;
   }
 }
