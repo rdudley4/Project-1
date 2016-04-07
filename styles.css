@@ -291,6 +291,37 @@ a.social:hover {
     height: 166px;
   }
 
+  iframe.youtube {
+    max-width: 640px;
+    height: 360px;
+    margin: 2% 0 0 0;
+    -webkit-box-shadow: 0px 0px 7px 1px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 0px 7px 1px rgba(0,0,0,0.75);
+    box-shadow: 0px 0px 7px 1px rgba(0,0,0,0.75);
+  }
+
+  #featured-video h2, a[href*="Proximity"] {
+    font-weight: bold;
+  }
+
+  #featured-video a {
+    color: #efefef;
+  }
+
+  #featured-video p {
+    margin-bottom: 40px;
+  }
+
+  a[href*="Proximity"] {
+    background-color: #DCA485;
+    background-image: url('images/Proximity.png');
+    background-repeat: no-repeat;
+    background-size: 24px 24px;
+    background-position: 5% 50%;
+    padding: 10px 40px;
+    border-radius: 6px;
+  }
+
   .music-tag {
     font-weight: 300;
     font-size: 1.325em;
